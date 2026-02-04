@@ -217,8 +217,8 @@
       <h2>Ready to get started?</h2>
       <p>Join founders who are reclaiming hours every week. Pick your tier and we'll take it from there.</p>
       <div class="cta-row" style="margin-top:8px;">
-        <a class="cta" href="https://buy.stripe.com/14AcN560m5kIanqdYU5wI01" target="_blank" rel="noopener">Start Launch — $99</a>
-        <a class="ghost" href="https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02" target="_blank" rel="noopener">Go Premium — $299</a>
+        <a class="cta checkout-btn" data-tier="Launch" data-price="99" href="https://buy.stripe.com/14AcN560m5kIanqdYU5wI01" target="_blank" rel="noopener">Start Launch — $99</a>
+        <a class="ghost checkout-btn" data-tier="Premium" data-price="299" href="https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02" target="_blank" rel="noopener">Go Premium — $299</a>
       </div>
     </section>
 
@@ -257,8 +257,6 @@
       if (!form) return;
 
       form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
         // Show loading state
         if (submitBtn) {
           submitBtn.disabled = true;
@@ -266,26 +264,45 @@
           if (btnText) btnText.style.display = 'none';
           if (btnLoading) btnLoading.style.display = 'inline';
         }
-
-        // Submit via fetch for better error handling
-        const formData = new FormData(form);
         
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Accept': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(formData).toString()
-        })
-        .then(() => {
-          // Redirect to success page
-          window.location.href = '/success.html';
-        })
-        .catch((err) => {
-          console.error('Form error:', err);
-          // Fallback: try normal form submission
-          form.submit();
-        });
+        // Track form submission in Plausible
+        if (window.plausible) {
+          plausible('Form Submit', { props: { form: 'free-guide' } });
+        }
+        
+        // Let Formspree handle the submission normally
+        // Formspree will redirect to success.html
       });
     })();
+
+    // Track checkout button clicks
+    document.querySelectorAll('.checkout-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const tier = this.getAttribute('data-tier');
+        const price = this.getAttribute('data-price');
+        
+        if (window.plausible) {
+          plausible('Checkout Click', { 
+            props: { 
+              tier: tier,
+              price: price,
+              location: 'final-cta'
+            } 
+          });
+        }
+      });
+    });
+
+    // Track pricing card CTA clicks
+    document.querySelectorAll('#pricing .btn').forEach(btn => {
+      if (!btn.classList.contains('checkout-btn')) {
+        btn.addEventListener('click', function() {
+          if (window.plausible) {
+            plausible('CTA Click', { props: { location: 'pricing-card' } });
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
