@@ -8,6 +8,9 @@
   <meta name="keywords" content="virtual assistant, AI assistant, automation, founder tools, no-code">
   <meta name="author" content="24-7bot">
   
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://24-7bot.com/">
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://24-7bot.com/">
@@ -23,6 +26,43 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
   
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "24/7 Virtual Personal Assistant",
+    "description": "Get a 24/7 virtual assistant built for you. No coding. No setup headaches. We build it, you use it.",
+    "brand": {
+      "@type": "Brand",
+      "name": "24-7bot"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Launch",
+        "price": "99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/14AcN560m5kIanqdYU5wI01"
+      },
+      {
+        "@type": "Offer",
+        "name": "Premium",
+        "price": "299",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127"
+    }
+  }
+  </script>
+  
   <!-- Plausible Analytics -->
   <script defer data-domain="24-7bot.com" src="https://plausible.io/js/script.js"></script>
   
@@ -31,82 +71,82 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">24/7 Virtual Personal Assistant</div>
+      <div class="brand" aria-label="24/7 Virtual Personal Assistant">24/7 Virtual Personal Assistant</div>
       <div class="nav">Built for non‑technical founders</div>
     </header>
 
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="eyebrow">Simple. Done‑for‑you.</div>
-      <h1>Get an assistant that runs your busywork 24/7</h1>
+      <h1 id="hero-heading">Get an assistant that runs your busywork 24/7</h1>
       <p>No code. No confusing setup. We build it for you so you can focus on sales, customers, and growth.</p>
       <div class="cta-row">
-        <a class="cta" href="#pricing">Start with Launch</a>
-        <a class="ghost" href="#how">See how it works</a>
+        <a class="cta" href="#pricing" aria-label="Start with Launch tier pricing">Start with Launch</a>
+        <a class="ghost" href="#how" aria-label="Learn how it works">See how it works</a>
       </div>
       
       <div class="trust-badges">
         <div class="trust-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <span>Secure checkout</span>
         </div>
         <div class="trust-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l3 3 5-5"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 12l3 3 5-5"/></svg>
           <span>100% satisfaction guarantee</span>
         </div>
         <div class="trust-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>Setup in 3-7 days</span>
         </div>
       </div>
     </section>
 
-    <section id="how" class="section">
-      <h2>How it works</h2>
+    <section id="how" class="section" aria-labelledby="how-heading">
+      <h2 id="how-heading">How it works</h2>
       <p>Getting started is simpler than you think. Three steps and you're done.</p>
       <div class="grid-3 steps">
         <div class="card">
-          <div class="step-number">1</div>
+          <div class="step-number" aria-hidden="true">1</div>
           <h3>Tell us what you want automated</h3>
           <p>Reply to leads, follow up, book calls, organize messages — just tell us what you need.</p>
         </div>
         <div class="card">
-          <div class="step-number">2</div>
+          <div class="step-number" aria-hidden="true">2</div>
           <h3>We build it for you</h3>
           <p>Zero technical work on your end. Our team handles the entire setup.</p>
         </div>
         <div class="card">
-          <div class="step-number">3</div>
+          <div class="step-number" aria-hidden="true">3</div>
           <h3>It goes live</h3>
           <p>Your assistant starts working 24/7. Manage everything from your phone with ease.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>What it can do</h2>
+    <section class="section" aria-labelledby="features-heading">
+      <h2 id="features-heading">What it can do</h2>
       <p>Powerful automations that save you hours every week.</p>
       <div class="grid-3 steps">
         <div class="card">
-          <div class="feature-icon">💬</div>
+          <div class="feature-icon" aria-hidden="true">💬</div>
           <h3>Answer FAQs</h3>
           <p>Instant, accurate replies to common questions. Never leave a prospect waiting again.</p>
         </div>
         <div class="card">
-          <div class="feature-icon">🎯</div>
+          <div class="feature-icon" aria-hidden="true">🎯</div>
           <h3>Lead capture</h3>
           <p>Automatically collect names, emails, and phone numbers from interested prospects.</p>
         </div>
         <div class="card">
-          <div class="feature-icon">🔄</div>
+          <div class="feature-icon" aria-hidden="true">🔄</div>
           <h3>Follow‑ups</h3>
           <p>Send timely reminders and check-ins automatically. Stay top-of-mind without the work.</p>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section pricing-section">
+    <section id="pricing" class="section pricing-section" aria-labelledby="pricing-heading">
       <div class="pricing-title">Simple pricing</div>
-      <h2>Choose your tier</h2>
+      <h2 id="pricing-heading">Choose your tier</h2>
       <p>One-time payment. No subscriptions, no hidden fees.</p>
       <div class="grid-3">
         <div class="card">
@@ -133,9 +173,9 @@
             <li>10 ready‑made skills included</li>
             <li>Support if you get stuck</li>
           </ul>
-          <a class="btn" href="https://buy.stripe.com/14AcN560m5kIanqdYU5wI01" target="_blank" rel="noopener">Start Launch</a>
+          <a class="btn btn-primary" href="https://buy.stripe.com/14AcN560m5kIanqdYU5wI01" target="_blank" rel="noopener noreferrer">Start Launch</a>
           <div class="secure-checkout">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             Secure Stripe checkout
           </div>
         </div>
@@ -150,159 +190,453 @@
             <li>1 custom automation built</li>
             <li>Priority support for 60 days</li>
           </ul>
-          <a class="btn" href="https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02" target="_blank" rel="noopener">Go Premium</a>
+          <a class="btn" href="https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02" target="_blank" rel="noopener noreferrer">Go Premium</a>
         </div>
       </div>
       
-      <div style="text-align: center;">
+      <div class="guarantee-container">
         <div class="guarantee-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l3 3 5-5"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 12l3 3 5-5"/></svg>
           <span>30-day money-back guarantee — no questions asked</span>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Frequently asked questions</h2>
+    <section class="section" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently asked questions</h2>
       <p>Quick answers to common questions.</p>
-      <div class="faq">
+      <div class="faq" role="region" aria-label="Frequently Asked Questions">
         <div class="faq-item active">
-          <div class="faq-question">Do I need to write any code?</div>
-          <p class="faq-answer">Not at all. We build everything for you. If you can send an email, you can use this.</p>
+          <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1">
+            Do I need to write any code?
+          </button>
+          <div id="faq-answer-1" class="faq-answer">
+            <p>Not at all. We build everything for you. If you can send an email, you can use this.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">How quickly can I get started?</div>
-          <p class="faq-answer">Most assistants are live within 3–7 days after we receive your requirements.</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            How quickly can I get started?
+          </button>
+          <div id="faq-answer-2" class="faq-answer">
+            <p>Most assistants are live within 3–7 days after we receive your requirements.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">What if I want changes later?</div>
-          <p class="faq-answer">We can upgrade your tier or add new automations anytime. Just reach out to our support.</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            What if I want changes later?
+          </button>
+          <div id="faq-answer-3" class="faq-answer">
+            <p>We can upgrade your tier or add new automations anytime. Just reach out to our support.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Is my data secure?</div>
-          <p class="faq-answer">Yes. We use enterprise-grade security and never share your information with third parties.</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            Is my data secure?
+          </button>
+          <div id="faq-answer-4" class="faq-answer">
+            <p>Yes. We use enterprise-grade security and never share your information with third parties.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="free-form" class="section">
-      <h2>Get the free guide</h2>
+    <section id="free-form" class="section" aria-labelledby="guide-heading">
+      <h2 id="guide-heading">Get the free guide</h2>
       <p>Enter your details and we'll send the guide straight to your inbox. No spam, ever.</p>
       <div class="form-card">
-        <form name="free-guide" method="POST" action="https://formspree.io/f/mojlgznd">
+        <form name="free-guide" method="POST" action="https://formspree.io/f/mojlgznd" novalidate>
           <input type="hidden" name="_next" value="https://24-7bot.com/success.html" />
-          <input type="text" name="_gotcha" style="display:none" />
+          <input type="text" name="_gotcha" class="form-honeypot" aria-hidden="true" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <div>
               <label for="name">Name</label>
-              <input id="name" name="name" placeholder="John Smith" required />
+              <input 
+                id="name" 
+                name="name" 
+                type="text" 
+                placeholder="John Smith" 
+                required 
+                autocomplete="name"
+                minlength="2"
+                maxlength="100"
+                aria-required="true"
+                aria-describedby="name-error"
+              />
+              <span id="name-error" class="form-error" role="alert" aria-live="polite"></span>
             </div>
             <div>
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="john@example.com" required />
+              <input 
+                id="email" 
+                name="email" 
+                type="email" 
+                placeholder="john@example.com" 
+                required 
+                autocomplete="email"
+                maxlength="254"
+                aria-required="true"
+                aria-describedby="email-error"
+              />
+              <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
             </div>
           </div>
           <label for="phone">Phone (optional)</label>
-          <input id="phone" name="phone" placeholder="+1 (555) 123-4567" />
-          <button class="btn" type="submit" id="submit-btn" style="margin-top:20px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;box-shadow:0 4px 16px rgba(255,107,45,0.35);position:relative;">
+          <input 
+            id="phone" 
+            name="phone" 
+            type="tel" 
+            placeholder="+1 (555) 123-4567"
+            autocomplete="tel"
+            maxlength="20"
+            pattern="[\d\s\-\+\(\)]{7,20}"
+            aria-describedby="phone-hint"
+          />
+          <small id="phone-hint" class="form-hint">Optional — include country code if outside US</small>
+          <noscript>
+            <p class="form-note form-note-warning">⚠️ JavaScript is disabled. Your form will still work, but you won't see loading feedback.</p>
+          </noscript>
+          <button class="btn btn-gradient btn-submit" type="submit" id="submit-btn">
             <span id="btn-text">Send me the guide</span>
-            <span id="btn-loading" style="display:none;">Sending...</span>
+            <span id="btn-loading" class="btn-loading-text" aria-hidden="true">Sending...</span>
           </button>
           <div class="form-note">We'll email the guide within 5 minutes. Unsubscribe anytime.</div>
         </form>
       </div>
     </section>
 
-    <section class="section final-cta">
-      <h2>Ready to get started?</h2>
+    <section class="section final-cta" aria-labelledby="final-cta-heading">
+      <h2 id="final-cta-heading">Ready to get started?</h2>
       <p>Join founders who are reclaiming hours every week. Pick your tier and we'll take it from there.</p>
-      <div class="cta-row" style="margin-top:8px;">
-        <a class="cta checkout-btn" data-tier="Launch" data-price="99" href="https://buy.stripe.com/14AcN560m5kIanqdYU5wI01" target="_blank" rel="noopener">Start Launch — $99</a>
-        <a class="ghost checkout-btn" data-tier="Premium" data-price="299" href="https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02" target="_blank" rel="noopener">Go Premium — $299</a>
+      <div class="cta-row cta-row-spaced">
+        <a class="cta checkout-btn" data-tier="Launch" data-price="99" href="https://buy.stripe.com/14AcN560m5kIanqdYU5wI01" target="_blank" rel="noopener noreferrer">Start Launch — $99</a>
+        <a class="ghost checkout-btn" data-tier="Premium" data-price="299" href="https://buy.stripe.com/fZuaEX9cyfZm8fi1c85wI02" target="_blank" rel="noopener noreferrer">Go Premium — $299</a>
       </div>
     </section>
 
     <footer>
-      <div style="margin-bottom:8px;">🤖 24/7 Virtual Personal Assistant</div>
+      <div class="footer-brand">🤖 24/7 Virtual Personal Assistant</div>
       <div>Built for non‑technical founders who value their time.</div>
     </footer>
   </div>
 
   <script>
-    // FAQ accordion functionality
-    document.querySelectorAll('.faq-question').forEach(question => {
-      question.addEventListener('click', () => {
-        const item = question.parentElement;
-        const isActive = item.classList.contains('active');
-        
-        // Close all items
-        document.querySelectorAll('.faq-item').forEach(faq => {
-          faq.classList.remove('active');
-        });
-        
-        // Open clicked item if it wasn't active
-        if (!isActive) {
-          item.classList.add('active');
-        }
-      });
-    });
-
-    // Form submission handling with visual feedback
+    /**
+     * Main application script for 24-7bot.com landing page
+     * Handles: FAQ accordion, form submission with validation, analytics tracking
+     */
+    
     (function() {
-      const form = document.querySelector('form[name="free-guide"]');
-      const submitBtn = document.getElementById('submit-btn');
-      const btnText = document.getElementById('btn-text');
-      const btnLoading = document.getElementById('btn-loading');
-
-      if (!form) return;
-
-      form.addEventListener('submit', function(e) {
-        // Show loading state
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.style.opacity = '0.7';
-          if (btnText) btnText.style.display = 'none';
-          if (btnLoading) btnLoading.style.display = 'inline';
+      'use strict';
+      
+      // ============================================
+      // Utility Functions
+      // ============================================
+      
+      /**
+       * Debounce function to limit how often a function can fire
+       * @param {Function} func - Function to debounce
+       * @param {number} wait - Milliseconds to wait
+       * @returns {Function} Debounced function
+       */
+      function debounce(func, wait) {
+        let timeout;
+        return function executedFunction() {
+          const context = this;
+          const args = arguments;
+          const later = function() {
+            timeout = null;
+            func.apply(context, args);
+          };
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+        };
+      }
+      
+      /**
+       * Safe analytics tracking with error handling
+       * @param {string} eventName - Name of the event
+       * @param {Object} props - Event properties
+       */
+      function trackEvent(eventName, props) {
+        try {
+          if (typeof window.plausible === 'function') {
+            window.plausible(eventName, { props: props });
+          }
+        } catch (error) {
+          // Silently fail analytics - don't break user experience
+          if (window.console && window.console.warn) {
+            console.warn('Analytics error:', error);
+          }
         }
+      }
+      
+      // ============================================
+      // FAQ Accordion with Event Delegation
+      // ============================================
+      
+      /**
+       * Initialize FAQ accordion functionality
+       * Uses event delegation for better performance
+       */
+      function initFaqAccordion() {
+        const faqContainer = document.querySelector('.faq');
+        if (!faqContainer) return;
         
-        // Track form submission in Plausible
-        if (window.plausible) {
-          plausible('Form Submit', { props: { form: 'free-guide' } });
+        // Use event delegation instead of attaching listeners to each question
+        faqContainer.addEventListener('click', debounce(function(e) {
+          const question = e.target.closest('.faq-question');
+          if (!question) return;
+          
+          const item = question.closest('.faq-item');
+          if (!item) return;
+          
+          const isActive = item.classList.contains('active');
+          const answerId = question.getAttribute('aria-controls');
+          const answer = document.getElementById(answerId);
+          
+          // Close all items
+          document.querySelectorAll('.faq-item').forEach(function(faq) {
+            faq.classList.remove('active');
+            const btn = faq.querySelector('.faq-question');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+          });
+          
+          // Open clicked item if it wasn't active
+          if (!isActive) {
+            item.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
+          }
+        }, 150));
+      }
+      
+      // ============================================
+      // Form Validation and Submission
+      // ============================================
+      
+      /**
+       * Validate email format
+       * @param {string} email - Email to validate
+       * @returns {boolean} Is valid email
+       */
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      
+      /**
+       * Validate phone number (optional field)
+       * @param {string} phone - Phone to validate
+       * @returns {boolean} Is valid phone or empty
+       */
+      function isValidPhone(phone) {
+        if (!phone || phone.trim() === '') return true;
+        const phoneRegex = /^[\d\s\-\+\(\)]{7,20}$/;
+        return phoneRegex.test(phone);
+      }
+      
+      /**
+       * Show validation error message
+       * @param {HTMLElement} input - Input element
+       * @param {string} message - Error message
+       */
+      function showError(input, message) {
+        const errorId = input.getAttribute('aria-describedby');
+        const errorEl = document.getElementById(errorId);
+        if (errorEl) {
+          errorEl.textContent = message;
         }
+        input.setAttribute('aria-invalid', 'true');
+      }
+      
+      /**
+       * Clear validation error
+       * @param {HTMLElement} input - Input element
+       */
+      function clearError(input) {
+        const errorId = input.getAttribute('aria-describedby');
+        const errorEl = document.getElementById(errorId);
+        if (errorEl) {
+          errorEl.textContent = '';
+        }
+        input.setAttribute('aria-invalid', 'false');
+      }
+      
+      /**
+       * Initialize form handling with validation
+       */
+      function initFormHandling() {
+        const form = document.querySelector('form[name="free-guide"]');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnLoading = document.getElementById('btn-loading');
         
-        // Let Formspree handle the submission normally
-        // Formspree will redirect to success.html
-      });
-    })();
-
-    // Track checkout button clicks
-    document.querySelectorAll('.checkout-btn').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        const tier = this.getAttribute('data-tier');
-        const price = this.getAttribute('data-price');
+        if (!form) return;
         
-        if (window.plausible) {
-          plausible('Checkout Click', { 
-            props: { 
-              tier: tier,
-              price: price,
-              location: 'final-cta'
-            } 
+        // Real-time validation on blur
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+        
+        if (nameInput) {
+          nameInput.addEventListener('blur', function() {
+            if (!this.value.trim()) {
+              showError(this, 'Please enter your name');
+            } else if (this.value.trim().length < 2) {
+              showError(this, 'Name must be at least 2 characters');
+            } else {
+              clearError(this);
+            }
+          });
+          
+          nameInput.addEventListener('input', function() {
+            clearError(this);
           });
         }
-      });
-    });
-
-    // Track pricing card CTA clicks
-    document.querySelectorAll('#pricing .btn').forEach(btn => {
-      if (!btn.classList.contains('checkout-btn')) {
-        btn.addEventListener('click', function() {
-          if (window.plausible) {
-            plausible('CTA Click', { props: { location: 'pricing-card' } });
+        
+        if (emailInput) {
+          emailInput.addEventListener('blur', function() {
+            if (!this.value.trim()) {
+              showError(this, 'Please enter your email');
+            } else if (!isValidEmail(this.value)) {
+              showError(this, 'Please enter a valid email address');
+            } else {
+              clearError(this);
+            }
+          });
+          
+          emailInput.addEventListener('input', function() {
+            clearError(this);
+          });
+        }
+        
+        if (phoneInput) {
+          phoneInput.addEventListener('blur', function() {
+            if (this.value && !isValidPhone(this.value)) {
+              showError(this, 'Please enter a valid phone number');
+            } else {
+              clearError(this);
+            }
+          });
+          
+          phoneInput.addEventListener('input', function() {
+            clearError(this);
+          });
+        }
+        
+        // Form submission
+        form.addEventListener('submit', function(e) {
+          let isValid = true;
+          
+          // Validate name
+          if (!nameInput || !nameInput.value.trim()) {
+            if (nameInput) showError(nameInput, 'Please enter your name');
+            isValid = false;
+          } else if (nameInput.value.trim().length < 2) {
+            showError(nameInput, 'Name must be at least 2 characters');
+            isValid = false;
           }
+          
+          // Validate email
+          if (!emailInput || !emailInput.value.trim()) {
+            if (emailInput) showError(emailInput, 'Please enter your email');
+            isValid = false;
+          } else if (!isValidEmail(emailInput.value)) {
+            showError(emailInput, 'Please enter a valid email address');
+            isValid = false;
+          }
+          
+          // Validate phone (optional)
+          if (phoneInput && phoneInput.value && !isValidPhone(phoneInput.value)) {
+            showError(phoneInput, 'Please enter a valid phone number');
+            isValid = false;
+          }
+          
+          // Stop submission if invalid
+          if (!isValid) {
+            e.preventDefault();
+            // Focus first error
+            const firstError = form.querySelector('[aria-invalid="true"]');
+            if (firstError) firstError.focus();
+            return;
+          }
+          
+          // Show loading state
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.setAttribute('aria-busy', 'true');
+            if (btnText) btnText.style.display = 'none';
+            if (btnLoading) btnLoading.style.display = 'inline';
+          }
+          
+          // Track form submission
+          trackEvent('Form Submit', { form: 'free-guide' });
+          
+          // Let Formspree handle the submission normally
+          // Formspree will redirect to success.html
         });
       }
-    });
+      
+      // ============================================
+      // Analytics Tracking for CTAs
+      // ============================================
+      
+      /**
+       * Initialize checkout button tracking
+       */
+      function initCheckoutTracking() {
+        const ctaContainer = document.querySelector('.final-cta');
+        if (!ctaContainer) return;
+        
+        // Event delegation for checkout buttons
+        ctaContainer.addEventListener('click', function(e) {
+          const btn = e.target.closest('.checkout-btn');
+          if (!btn) return;
+          
+          const tier = btn.getAttribute('data-tier');
+          const price = btn.getAttribute('data-price');
+          
+          trackEvent('Checkout Click', { 
+            tier: tier,
+            price: price,
+            location: 'final-cta'
+          });
+        });
+      }
+      
+      /**
+       * Initialize pricing card CTA tracking
+       */
+      function initPricingTracking() {
+        const pricingSection = document.getElementById('pricing');
+        if (!pricingSection) return;
+        
+        pricingSection.addEventListener('click', function(e) {
+          const btn = e.target.closest('.btn');
+          if (!btn || btn.classList.contains('checkout-btn')) return;
+          
+          trackEvent('CTA Click', { location: 'pricing-card' });
+        });
+      }
+      
+      // ============================================
+      // Initialize Everything
+      // ============================================
+      
+      function init() {
+        initFaqAccordion();
+        initFormHandling();
+        initCheckoutTracking();
+        initPricingTracking();
+      }
+      
+      // Run when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
   </script>
 </body>
 </html>

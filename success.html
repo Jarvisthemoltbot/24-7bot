@@ -4,34 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thanks — 24/7 Virtual Personal Assistant</title>
-  <meta name="description" content="Thank you for your interest in 24/7 Virtual Personal Assistant.">
+  <meta name="description" content="Thank you for your interest in 24/7 Virtual Personal Assistant. Your guide is on its way.">
+  <meta name="author" content="24-7bot">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://24-7bot.com/success.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://24-7bot.com/success.html">
+  <meta property="og:title" content="Thanks — 24/7 Virtual Personal Assistant">
+  <meta property="og:description" content="Thank you for your interest in 24/7 Virtual Personal Assistant.">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+  
+  <!-- Plausible Analytics -->
   <script defer data-domain="24-7bot.com" src="https://plausible.io/js/script.js"></script>
-  <script>
-    // Track successful form submission
-    document.addEventListener('DOMContentLoaded', function() {
-      if (window.plausible) {
-        plausible('Form Success', { props: { form: 'free-guide' } });
-      }
-    });
-  </script>
+  
   <link rel="stylesheet" href="/assets/css/style.css">
-  <style>
-    .success-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
-    .success-card { max-width: 500px; padding: 40px; }
-    .success-icon { font-size: 64px; margin-bottom: 20px; }
-  </style>
 </head>
 <body>
   <div class="wrap success-wrap">
     <div class="success-card">
-      <div class="success-icon">✅</div>
+      <div class="success-icon" aria-hidden="true">✅</div>
       <h1>You're on the list!</h1>
       <p>Check your inbox in a few minutes. We've sent the guide to the email you provided.</p>
-      <p style="margin-top: 24px;">
-        <a href="/" class="cta">Back to homepage</a>
+      <p class="success-cta">
+        <a href="/" class="cta" aria-label="Return to homepage">Back to homepage</a>
       </p>
     </div>
   </div>
+
+  <script>
+    /**
+     * Success page analytics and utilities
+     */
+    (function() {
+      'use strict';
+      
+      /**
+       * Safe analytics tracking with error handling
+       * @param {string} eventName - Name of the event
+       * @param {Object} props - Event properties
+       */
+      function trackEvent(eventName, props) {
+        try {
+          if (typeof window.plausible === 'function') {
+            window.plausible(eventName, { props: props });
+          }
+        } catch (error) {
+          // Silently fail analytics - don't break user experience
+          if (window.console && window.console.warn) {
+            console.warn('Analytics error:', error);
+          }
+        }
+      }
+      
+      // Track successful form submission when page loads
+      function init() {
+        trackEvent('Form Success', { form: 'free-guide' });
+      }
+      
+      // Run when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>
