@@ -189,8 +189,9 @@
       <h2>Get the free guide</h2>
       <p>Enter your details and we'll send the guide straight to your inbox. No spam, ever.</p>
       <div class="form-card">
-        <form name="free-guide" method="POST" data-netlify="true" action="/success.html">
+        <form name="free-guide" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
           <input type="hidden" name="form-name" value="free-guide" />
+          <p class="hidden" style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
           <div class="form-row">
             <div>
               <label for="name">Name</label>
